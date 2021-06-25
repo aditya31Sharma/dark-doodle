@@ -1,0 +1,107 @@
+
+/* #region misc*/
+
+@font-face {
+    font-family: 'PoppinsLight';
+    src: local('PoppinsLight'),
+         url('./fonts/Poppins-Light.ttf') format('truetype')
+}
+  @font-face {
+    font-family: 'PoppinsMedium';
+    src: local('PoppinsMedium'),
+         url('./fonts/Poppins-Medium.ttf') format('truetype')
+  }
+  @font-face {
+    font-family: 'PoppinsBold';
+    src: local('PoppinsBold'),
+         url('./fonts/Poppins-Bold.ttf') format('truetype')
+  }
+  
+  @-webkit-keyframes Coolbg {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+  }
+  @-moz-keyframes Coolbg {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+  }
+  @keyframes Coolbg {
+    0%{background-position:0% 90%}
+    50%{background-position:100% 11%}
+    100%{background-position:0% 90%}
+  }
+  /* width */
+  ::-webkit-scrollbar
+  {
+      width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      background: linear-gradient(49deg,#6fff7b,#7bcaff);
+                  border-radius:100px;          
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background:#151517;
+      border-radius:10px;
+      
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover{
+      box-shadow: inset -6px -6px 10px rgba(255,255,255,0.05),
+                  inset 6px 6px 20px rgba(0,0,0,0.5);
+  }
+  
+  /* #endregion */
+  *{
+      box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'PoppinsMedium', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    text-align: center;
+    background-color:#f2f2f2;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    margin: 0;
+    color: #020086;
+  }
+  h1{
+    font-family: 'PoppinsBold',sans-serif;
+    font-size: 6rem;
+    padding:0rem;
+    margin:3rem auto;
+    background: linear-gradient(49deg,#00ffea,#5fbfff,#6e71ff,#db28ff);
+      background-size: 400% 400%;
+      background-clip:text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: Coolbg 5s ease infinite;
+      -moz-animation: Coolbg 5s ease infinite;
+      animation: Coolbg 5s ease infinite;
+  }
+  h3,h4{
+    font-family: 'PoppinsMedium',sans-serif;
+    margin: 0rem;
+    padding:0rem;
+    margin-bottom: 2rem;
+  }
+  button{
+      outline:none;
+      border: none;
+      cursor: pointer;
+  }
+  

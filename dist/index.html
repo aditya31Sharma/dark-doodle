@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Dark doodle</title>
+</head>
+<body>
+    <section class="disable-mobile">
+        <h1>This website is not available for smaller screens</h1>
+    </section>
+    <section class="content">
+        <h2>Yes, a dark themed drawing web-app</h2>
+        <h1>Dark doodle</h1>
+        <h3>so you focus on what you draw</h3>
+    </section>
+    <section class="container">
+        <canvas id="canvas" width="600" height="600"></canvas>
+        <article class="toolbox">
+            <div class="input-color-container">
+                <input type="color" id="color">
+            </div>
+            <button id="eraser">
+                <img src="./img/erase.png" alt="E" class="icon">
+            </button>
+            <button id="decrease">
+                <img src="./img/decrease.png" alt="-" class="icon">
+            </button>
+            <span id="size">
+                20
+            </span>
+            <button id="increase">
+                <img src="./img/increase.png" alt="+" class="icon">
+            </button>
+            
+            <button id="clear">
+                <img src="./img/clear.png" alt="X" class="icon">
+            </button>
+        </article>
+    </section>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
